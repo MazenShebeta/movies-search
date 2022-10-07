@@ -17,8 +17,7 @@ function App() {
             <li> About </li>
             <li> Contact </li>
           </ul>
-        </nav>
-        <MovieList />
+        </nav>        
         <Routes>
           //this is the route for App
           <Route path='/' element={<MovieList />} />
