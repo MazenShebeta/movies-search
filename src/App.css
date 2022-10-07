@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    background-color: #282c34;
+    color: white;
+    /* font-size: calc(10px + 2vmin); */
+    padding: 0 10px;
+    list-style: none;  
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+}

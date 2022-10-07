@@ -2,6 +2,7 @@
 import { getDefaultNormalizer } from '@testing-library/react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './MovieCard.css';
 
 function Movie(props) {
     var cardTitle = props.title;
@@ -9,9 +10,9 @@ function Movie(props) {
     var cardImage = props.imagePath;
     var cardRating = props.rating;
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }} className='Card'>
         <Card.Img variant="top" src={cardImage}/>
-        <Card.Body>
+        <Card.Body className='CardText'>
             <Card.Title>{cardTitle}</Card.Title>
             <Card.Text>{cardText} </Card.Text>
             <Card.Text>Rating: {cardRating}</Card.Text>
